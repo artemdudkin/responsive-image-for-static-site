@@ -18,5 +18,5 @@ Call it with two mandatory params: (1) folder of html files and (2) folder for s
 ```
 
 ## Sample
-![demo-animated-gif](https://github.com/artemdudkin/responsive-image-for-static-site/blob/master/docs/fly.gif)
+![demo-animated-gif](https://github.com/artemdudkin/responsive-image-for-static-site/blob/master/docs/fly.gif?raw=true)
 
