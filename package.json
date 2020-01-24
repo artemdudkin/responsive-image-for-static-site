@@ -1,0 +1,13 @@
+{
+  "name": "responsive-image-for-static-site",
+  "version": "0.1.0",
+  "dependencies": {
+    "image-size": "^0.8.3",
+    "jq-min": "^0.1.0",
+    "ora": "^4.0.3",
+    "parse5": "^5.1.1",
+    "sharp": "^0.24.0",
+    "terser": "^4.6.3"
+  },
+  "devDependencies": {}
+}
