@@ -16,3 +16,7 @@ Call it with two mandatory params: (1) folder of html files and (2) folder for s
 ``` javascript
   node node_modules/responsive-image-for-static-site/index.js ./ ./cahceFolder
 ```
+
+## Sample
+![demo-animated-gif](https://github.com/artemdudkin/responsive-image-for-static-site/blob/master/docs/demo.gif)
+
