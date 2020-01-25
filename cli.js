@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
+//TODO test lib on regular pages from the net
+//TODO do not use <div> container
+//TODO copy all attributes to stub image
+
 //TODO do not add scripts if there is not images at this file
 //TODO do not replace img with stub if img already loaded (at the cache already)
 //TODO unit-tests
-
-//TODO do not use <div> container
-//TODO copy all attributes to stub image
 
 //TODO noConflists ($ is common with jQuery)
 //TODO add option "recursive search html"
