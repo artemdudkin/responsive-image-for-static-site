@@ -28,7 +28,7 @@ npm install -g responsive-image-for-static-site
 ```
 
 ## Usage
-Call it with two mandatory params: (1) folder of html files and (2) folder for set of cache files
+There are two mandatory params: (1) folder of html files and (2) folder for set of cache files
 
 ``` javascript
   rifs . cacheFolder
