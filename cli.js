@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 //TODO do not add scripts if there is not images at this file
+//TODO do not replace img with stub if img already loaded (at the cache already)
 
 //TODO do not use <div> container
 //TODO copy all attributes to stub image
