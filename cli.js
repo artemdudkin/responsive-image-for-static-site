@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-//TODO setup cacheFolder name at browser script
+//TODO do not add scripts if there is not images at this file
 
 //TODO do not use <div> container
 //TODO copy all attributes to stub image
