@@ -1,6 +1,6 @@
 {
   "name": "responsive-image-for-static-site",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Adds support of responsive image loading for static htmls.",
   "author": "Artem Dudkin <sheeva@list.ru>",
   "license": "MIT",
