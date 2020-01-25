@@ -7,14 +7,14 @@ This lib search for all html files at specified folder, then get all images from
 ## Installation
 
 ```
-npm install --save-dev responsive-image-for-static-site
+npm install -g responsive-image-for-static-site
 ```
 
 ## Usage
 Call it with two mandatory params: (1) folder of html files and (2) folder for set of cache files
 
 ``` javascript
-  node node_modules/responsive-image-for-static-site/index.js ./ ./cahceFolder
+  rifs . cahceFolder
 ```
 
 ## Sample

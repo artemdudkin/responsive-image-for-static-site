@@ -1,10 +1,13 @@
 {
   "name": "responsive-image-for-static-site",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Adds support of responsive image loading for static htmls.",
   "author": "Artem Dudkin <sheeva@list.ru>",
   "license": "MIT",
   "main": "index.js",
+  "bin": {
+    "rifs": "./cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/artemdudkin/responsive-image-for-static-site"

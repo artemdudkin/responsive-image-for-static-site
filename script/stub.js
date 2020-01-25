@@ -1,31 +1,36 @@
 var piImg = [];
-$('[pi-stub]').forEach( el => {
+$('[rifs-stub]').forEach( el => {
   piImg.push(el);
-  const srcStub = el.getAttribute('pi-stub');
-  const srcOriginal = el.getAttribute('pi-original');
-  stubAndLoad(el, srcStub, srcOriginal);
+  const srcStub = el.getAttribute('rifs-stub');
+  stubAndLoad(el, srcStub);
 });
 
 $(window).resize( event => {
   piImg.forEach( el => {
-    let w = 800;
-    try {w = +el.getAttribute('pi-width'); } catch(e) {}
-    if ( w < el.offsetWidth) {
-      const srcOriginal = el.getAttribute('pi-original');
-      stubAndLoad(el, el.src, srcOriginal); 
+    const widthAttr = el.getAttribute('rifs-width');
+    if (widthAttr !== 'original') {
+      let w = 800;
+      try { w = +widthAttr } catch(e) {}
+      if (w < el.offsetWidth) stubAndLoad(el, el.src); 
     }
   });
 });
 
-function stubAndLoad(el, srcStub, srcOriginal) {
+function stubAndLoad(el, srcStub) {
+  const srcOriginal = el.getAttribute('rifs-original');
   const width = el.offsetWidth;
 
   const container = $('<div></div>')[0];
   const stub = $('<img></img>')[0];
 
   let w = Math.round(width*1.5/100)*100; 
-  el.setAttribute('pi-width', "" + w);
-  el.src = (w <= 1500 ? getCacheFileName( srcOriginal, w, "cache") : srcOriginal);
+  if (w <= 1500) {
+    el.setAttribute('rifs-width', "" + w);
+    el.src = getCacheFileName( srcOriginal, w, "{{cacheFolder}}");
+  } else {
+    el.setAttribute('rifs-width', 'original');
+    el.src = srcOriginal;
+  }
   const onLoadFunc = () => {
     $(stub).remove();
     $(el).show();
