@@ -23,7 +23,6 @@ if (!process.argv[2] || !process.argv[3]) {
   console.log("\n  Usage: node index.js <path> <cacheFolder>");
 } else {
   let ret = [];
-  const scriptHomeFolder = path.dirname(process.argv[1]);
   const htmlFiles = findFilesByMask(process.argv[2],'.html');
   const cacheFolder = process.argv[3];
 
@@ -35,7 +34,7 @@ if (!process.argv[2] || !process.argv[3]) {
     .reduce((p, fn) => {
       return p.then( res => {
         logger.incFileCounter();
-        return processFile(fn, cacheFolder, scriptHomeFolder)
+        return processFile(fn, cacheFolder)
       });
     }, Promise.resolve())
     .then( () => {
