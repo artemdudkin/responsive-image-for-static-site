@@ -1,7 +1,7 @@
 # responsive-image-for-static-site
 
 Problem:
-1. If you have images at your site, and if your client use slow connection, then images loads slowly even if most of users use smartphones and do not need large images of high quality (as screen of smartphone is rather small). On the other hand you want good quality (because it sells, of course). **Responsive image** to the resque! (i.e. browser should load image of appopriate size - large image for big displays and small image for smartphones).
+1. If you have images at your site, and if your client use slow connection, then images loads slowly even if most of users use smartphones and do not need large images of high quality (as screen of smartphone is rather small). On the other hand you want good quality (because it sells, of course). **Responsive images** to the resque! (i.e. browser should load image of appopriate size - large image for big displays and small image for smartphones).
 
 2. Again, with slow connection and set if images, user will see rendered site in a while... Not very good. And they use **Progressive images** - they adds inlined blurred low-quality image instead of original, then wait until original image loads, and then replace blurred image with original image. 
 
