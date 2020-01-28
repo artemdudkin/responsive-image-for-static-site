@@ -1,6 +1,7 @@
 # responsive-image-for-static-site
 
-Problem: if you have high-quality images at website then slow connection can produce bad user experience, because images loads slowly.
+Problem: 
+if you have high-quality images at website then slow connection can produce bad user experience, because images loads slowly.
 
 Solution:
 1. **Responsive images**. Most of users use smartphones and do not need big images (because screen of smartphone is rather small). On the other hand, you want good quality (because it sells, of course). I.e. browser should load image of appopriate size - large image for big displays and small image for smartphones).
