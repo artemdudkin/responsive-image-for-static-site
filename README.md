@@ -14,7 +14,7 @@ Solution:
 
 This lib search for all html files at specified folder, then get all images from that files, then creates set of cache files for responsive image loading (100px, 200px, ... 1500px); also add some scripts to html files to make it all work (i.e. to load image of appropiate size) and adds stub (blurred) image to all &lt;img&gt; tag.
 
-## How it looks like
+## Under the hood
 ```html
  <img src="img/item42/sample.jpg">
 ```
@@ -37,6 +37,6 @@ There are two mandatory params: (1) folder of html files and (2) folder for set 
   rifs . cacheFolder
 ```
 
-## Example
+## How it looks like
 ![demo-animated-gif](https://github.com/artemdudkin/responsive-image-for-static-site/blob/master/docs/fly.gif?raw=true)
 
