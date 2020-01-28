@@ -22,7 +22,7 @@ becomes
 ```html
  <img src="cacheFolder/58a2fca2.jpg" rifs-stub="data:image/png;base64,iVBOR..." rifs-original="img/item42/sample.jpg">
 ```
-with some js scripts added at the end of the html file.
+with some js scripts added at the end of the html file (if JS turned off then it loads 800px image).
 
 ## Installation
 
