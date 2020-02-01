@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 //TODO test lib on regular pages from the net
-//TODO do not use <div> container
-//TODO copy all attributes to stub image
 
 //TODO do not replace img with stub if img already loaded (at the cache already)
 //TODO unit-tests
@@ -33,6 +31,7 @@ if (!process.argv[2] || !process.argv[3]) {
   logger.start();
 
   htmlFiles
+    // process files one by one (to save memory)
     .reduce((p, fn) => {
       return p.then( res => {
         logger.incFileCounter();
