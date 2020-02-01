@@ -5,7 +5,7 @@ const http = require('http'),
       bodyParser = require('body-parser'),
       querystring = require('querystring');
 
-const STATIC_FOLDER = '../test';
+const STATIC_FOLDER = '../html';
 const SERVER_PORT = 8080;
 console.log('home dir == ' + process.cwd());
 console.log('port == ' + SERVER_PORT);

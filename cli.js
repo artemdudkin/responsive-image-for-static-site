@@ -45,6 +45,6 @@ if (!process.argv[2] || !process.argv[3]) {
     .catch( (err) => {
       logger.finish();
       console.error("ERROR "+ err);
-      console.error("CAUSED BY:\n" + err.stack);
+      if (err.stack) console.error("CAUSED BY:\n" + err.stack);
     });
 }
