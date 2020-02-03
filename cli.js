@@ -20,7 +20,7 @@ const { findFilesByMask, processFile } = require('./lib/files');
 
 
 if (!process.argv[2] || !process.argv[3]) {
-  console.log("\n  Usage: node index.js <path> <cacheFolder>");
+  console.log("\n  Usage: rifs <path> <cacheFolder>");
 } else {
   let ret = [];
   const htmlFiles = findFilesByMask(process.argv[2],'.html');
