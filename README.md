@@ -6,7 +6,7 @@ if you have high-quality images at website then slow connection can produce bad 
 Solution:
 1. **Responsive images**. Most of users use smartphones and do not need big images (because screen of smartphone is rather small). On the other hand, you want good quality (because it sells, of course). I.e. browser should load image of appopriate size - large image for big displays and small image for smartphones).
 
-2. **Progressive images** - they adds inlined blurred low-quality image instead of original, then wait until original image loads, and then replace blurred image with original image. Lokks nice (see example picture below).
+2. **Progressive images** - they adds inlined blurred low-quality image instead of original, then wait until original image loads, and then replace blurred image with original image. Looks nice (see example picture below).
 
 3. But what if you have good old static site? You cannot use all that stuff. But you can use `responsive-image-for-static-site`.
 
