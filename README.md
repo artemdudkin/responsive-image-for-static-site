@@ -12,7 +12,7 @@ Solution:
 
 ## How it works
 
-This lib search for all html files at specified folder, then get all images from that files, then creates set of cache files for responsive image loading (100px, 200px, ... 1500px); also add some scripts to html files to make it all work (i.e. to load image of appropiate size) and adds stub (blurred) image to all &lt;img&gt; tag.
+This lib search for all html files at specified folder, then parse it to get all images from &lt;img&gt; tags, then creates set of cache files for responsive image loading (100px, 200px, ... 1500px), and adds stub (blurred) image to all &lt;img&gt; tags; also add some scripts to html files to make it all work (i.e. to apply stub images and to load image of appropiate size).
 
 ## Under the hood
 ```html
