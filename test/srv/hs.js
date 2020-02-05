@@ -13,19 +13,18 @@ console.log('STATIC_FOLDER == ' + STATIC_FOLDER);
 
 var app = connect();
 
+//process static files
 app.use(function(req, res, next) {
   const fn = path.join(STATIC_FOLDER, req.url);
   fs.stat(fn, (err, stat) => {
     if (err && (err.code === 'ENOENT' || err.code === 'ENOTDIR')) {
-//console.log('err', err.code, fn);
       next();
     } else {
       const ext = path.extname(fn);
-//console.log('ext', ext);
       let p = Promise.resolve();
       if (ext === '.jpg' || ext === '.png') {
+        // delay images (to see image stubs working)
         p = new Promise((resolve, reject)=>setTimeout(()=>resolve(), 5000));
-//console.log('delayed 2s');
       }
       p.then(()=>{
         stream = fs.createReadStream(fn);
