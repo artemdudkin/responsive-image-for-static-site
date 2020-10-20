@@ -10,7 +10,7 @@ Solution:
 
 3. But what if you have good old static site? You cannot use all that stuff. But you can use `responsive-image-for-static-site`.
 
-(under construction - see TODOs at cli.js)
+(&#128679; under construction - see TODOs at [cli.js](cli.js))
 
 ## How it works
 
