@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-//TODO test lib on regular pages from the net
+//TODO [!!!] add option "recursive search html"
 
-//TODO do not replace img with stub if img already loaded (at the cache already)
+//TODO test lib on regular pages from the net
 //TODO unit-tests
 
+//TODO do not replace img with stub if img already loaded (at the cache already)
+
 //TODO noConflists ($ is common with jQuery)
-//TODO add option "recursive search html"
 //TODO add option "do not modify scripts"
 //TODO add option "update only image cache / only scripts"
 //TODO add option "replace jq-min with jquery" 
