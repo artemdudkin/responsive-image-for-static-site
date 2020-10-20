@@ -10,6 +10,8 @@ Solution:
 
 3. But what if you have good old static site? You cannot use all that stuff. But you can use `responsive-image-for-static-site`.
 
+(under construction - see TODOs at cli.js)
+
 ## How it works
 
 This lib search for all html files at specified folder, then parse it to get all images from &lt;img&gt; tags, then creates set of cache files for responsive image loading (100px, 200px, ... 1500px), and adds stub (blurred) image to all &lt;img&gt; tags; also add some scripts to html files to make it all work (i.e. to apply stub images and to load image of appropiate size).
